@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Experian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body><img src="https://amazon-connect-5e6cf7e32d6e.s3.us-west-2.amazonaws.com/Experian/experianpage.png" class="responsive">
+
+    <!-- Start of Talkdesk Code -->
+    <script>
+      var webchat;
+      ((window, document, node, props, configs) => {
+        if (window.TalkdeskChatSDK) {
+          console.error("TalkdeskChatSDK already included");
+          return;
+        }
+        var divContainer = document.createElement("div");
+        divContainer.id = node;
+        document.body.appendChild(divContainer);
+        var currentDate = new Date().getTime();
+        var src =
+          `https://talkdeskchatsdk.talkdeskapp.com/talkdeskchatsdk.js?t=` +
+          currentDate;
+        var script = document.createElement("script");
+        var firstScriptTag = document.getElementsByTagName("script")[0];
+        script.type = "text/javascript";
+        script.charset = "UTF-8";
+        script.id = "tdwebchatscript";
+        script.src = src;
+        script.async = true;
+        firstScriptTag.parentNode.insertBefore(script, firstScriptTag);
+        script.onload = () => {
+          webchat = TalkdeskChatSDK(node, props);
+          webchat.init(configs).then(function () {
+            setTimeout(function () {
+              webchat.selfHostedApp.addUserMessage({
+                data: "GetStarted",
+                type: "postback"
+              });
+            }, 100);
+          });
+        };
+      })(
+        window,
+        document,
+        "tdWebchat",
+        {
+          flowId: "4f63c4bd6a23493fb2a76fb5abebbd92",
+          accountId: "",
+          region: "td-us-1"
+        },
+        {
+          enableEmoji: true,
+          enableUserInput: true,
+          styles: {
+            /* General */
+            'chatThemeMainFont': 'Roboto-Regular',
+            /* Widget launcher */
+            'chatThemeColor': '#FFFFFF',
+            'chatHoverThemeColor': '#FFFFFF',
+            'chatIcon':'https://amazon-connect-5e6cf7e32d6e.s3.us-west-2.amazonaws.com/Experian/Experian-Logo.png',
+            'triggerButtonHeight': '70px',
+            'triggerButtonWidth': '70px',
+            'triggerButtonPositionRight': null,
+            'triggerButtonPositionBottom': null,
+            /* Widget header */
+            'chatTitleIcon':
+            'https://amazon-connect-5e6cf7e32d6e.s3.us-west-2.amazonaws.com/Experian/Experian_logo.wide.png',
+            'chatTitleIconHeight': '60px',
+            'chatTitleIconWidth': '100px',
+            <!-- Removal of 'chatTitle': 'Talkdesk Chat', -->
+           
+            'chatTitleTextColor': null,
+            'chatSubtitle': '',
+            'chatSubtitleTextColor': null,
+            'chatMinimizeButtonColor': '#6C217C',
+            'chatCloseButtonColor': '#6C217C',
+            /* Widget window */
+            'chatContainerWidth': null,
+            'chatContainerHeight': null,
+            'chatPositionBottom': null,
+            /* Initial screen - Welcome message */
+            'welcomeMessageBackgroundColor': '#4D356A',
+            'welcomeMessageTitleFontFamily': 'Roboto-Regular',
+            'welcomeMessageTitleFontSize': '24px',
+            'welcomeMessageTitleColor': '#FFFFFF',
+            'welcomeMessageContentFontFamily': 'Roboto-Regular',
+            'welcomeMessageContentFontSize': '16px',
+            'welcomeMessageContentColor': '#FFFFFF',
+            /* Initial screen - Custom message */
+            'customMessageNoBubbleFontFamily': 'Roboto-Regular',
+            'customMessageNoBubbleFontSize': '14px',
+            'customMessageNoBubbleColor': '#194892',
+            'customMessageBackgroundColor': '#F2F4F5',
+            'customMessageFontFamily': 'Roboto-Regular',
+            'customMessageFontSize': '14px',
+            'customMessageColor': '#194892',
+            /* Initial screen - Custom field */
+            'customFieldLabelFontFamily': 'Roboto-Regular',
+            'customFieldLabelFontSize': '14px',
+            'customFieldLabelColor': '#194892',
+            'customFieldInputFontFamily': 'Roboto-Regular',
+            'customFieldInputFontSize': null,
+            'customFieldInputColor': '#202830',
+            'customFieldInputBackgroundColor': '#FFFFFF',
+            'customFieldInputPlaceholder': 'Type',
+            /* Initial screen - Custom dropdown */
+            'customDropdownLabelFontFamily': 'Roboto-Regular',
+            'customDropdownLabelFontSize': '14px',
+            'customDropdownLabelColor': '#202830',
+            'customDropdownInputFontFamily': 'Roboto-Regular',
+            'customDropdownInputFontSize': '14px',
+            'customDropdownInputColor': '#202830',
+            'customDropdownInputBackgroundColor': '#FFFFFF',
+            'customDropdownInputPlaceholder': 'Select',
+            /* Initial screen - Custom button */
+            'customButtonFontFamily': 'Roboto-Regular',
+            'customButtonFontSize': '14px',
+            'customButtonColor': '#194892',
+            'customButtonBackgroundColor': '#FFFFFF',
+            'customButtonBorderColor': '#194892',
+            'customButtonHeight': '32px',
+            /* Chat screen */
+            'userTextColor': '#FFFFFF',
+            'userBackgroundColor': '#194892',
+            'userAnchorTextColor': '#E1CCFE',
+            'userAnchorTextColorVisited': '#B681FC',
+            'botTextColor': '#000000',
+            'botBackgroundColor': '#F2F4F5',
+            'botAnchorTextColor': '#3232D6',
+            'botAnchorTextColorVisited': '#5405BD',
+            'botIconVerticalAlign': 'top',
+            'avatarForegroundColor': '#5C6784',
+            'avatarBackgroundColor': '#EDF4FC',
+            'avatarBorderColor': '#EDF4FC',
+            'botIconHeight': '32px',
+            'botIconWidth': '32px',
+            'botIcon': 'https://amazon-connect-5e6cf7e32d6e.s3.us-west-2.amazonaws.com/Experian/Experian-Logo.png',
+            'userInputSeparatorColor': '#DFDFDF',
+            'userInputHeight': '20px',
+            'chatPlaceholder': 'Type a message...',
+            /* Dialog boxes - General */
+            'chatDialogBoxIconColor': '#AEB3B8',
+            'chatDialogBoxFontFamily': 'Roboto-Regular',
+            'chatDialogBoxFontSize': '16px',
+            'chatDialogBoxFontColor': '#202830',
+            'chatConfirmButtonFontFamily': 'Roboto-Regular',
+            'chatConfirmButtonFontSize': '14px',
+            'chatConfirmButtonFontColor': '#FFFFFF',
+            'chatConfirmButtonBackgroundColor': '#194892',
+            'chatCancelButtonFontFamily': 'Roboto-Regular',
+            'chatCancelButtonFontSize': '14px',
+            'chatCancelButtonFontColor': '#F2F4F5',
+            /* Dialog boxes - End conversation */
+            'chatDialogBoxEndChat': 'Are you sure you want to end this chat?',
+            'chatConfirmButtonEndChat': 'Confirm',
+            'chatCancelButtonEndChat': 'Cancel',
+            /* Dialog boxes - System error ending conversation */
+            'chatDialogBoxRetryEndChat': 'There was an error while ending the chat.',
+            'chatConfirmButtonRetryEndChat': 'Try again',
+            'chatCancelButtonRetryEndChat': 'Dismiss',
+            /* Ended chat screen */
+            'endedChatMessage': 'This chat has ended',
+            'startChatButtonTextColor': '#FFFFFF',
+            'startChatButtonBackgroundColor': '#194892',
+            'startChatButtonBorderColor': '#1E0044',
+            'startChatButtonHoverTextColor': '#FFFFFF',
+            'startChatButtonHoverBackgroundColor': '#6C217C',
+            'startChatButtonHoverBorderColor': '#1E0044',
+            'startChatButtonLabel': 'Start new chat',
+            /* Virtual agent */
+            'carouselTextColor': '#475059',
+            'buttonTextColor': '#005CDE',
+            'buttonBackgroundColor': '#EDF4FC',
+            'buttonHoverBackgroundColor': '#EDF4FC',
+            'replyTextColor': '#005CDE',
+            'replyBackgroundColor': 'transparent',
+            'replyBorderColor': '#005CDE',
+            'replyHoverTextColor': '#EDF4FC'
+          }
+        }
+      );
+    </script><div id="tdWebchat"></div>
+    <!-- End of Talkdesk Code -->
+
+</body>
+</html>
